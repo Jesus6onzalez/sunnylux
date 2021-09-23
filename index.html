@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SunnyLux</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/avatar.png">
+</head>
+<body id="body">
+	<!--<img class="wave" src="img/wave.png">-->
+	<div id="fondo" style="background-image: url('img/dia.jpg');">
+
+	<div class="container">
+		<div class="img">
+			<img src="img/bg1.png" id="solyluna">
+		</div>
+
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.png">
+				<h2 id ="titulo" class="title">SUNNYLUX</h2>
+
+				<h4>Luminosidad:</h4>
+
+           		<div class="input-div one">
+           		   <div class="i">
+					<i class="fas fa-sun"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5 id="postElement1">0 LUX</h5>
+           		   </div>
+           		</div>
+
+
+
+           		<div class="input-div one">
+           		   <div class="i"> 
+					<i class="fas fa-lightbulb"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5 id="postElement2">Luces apagadas!</h5>
+            	   </div>
+            	</div>
+
+	
+
+            	<input type="button" onclick="lampara()" class="btn" value="On/Off" id="boton">
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+	
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyDpXh_OmELCvqg4ePS1otYRyciS0Y8WES8",
+  		authDomain: "sunnylux-f4f62.firebaseapp.com",
+  		databaseURL: "https://sunnylux-f4f62-default-rtdb.firebaseio.com",
+  		projectId: "sunnylux-f4f62",
+ 		storageBucket: "sunnylux-f4f62.appspot.com",
+  		messagingSenderId: "337949785796",
+  		appId: "1:337949785796:web:61da890013ea8878f29391"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
